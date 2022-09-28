@@ -2,7 +2,7 @@
   "name": "angular",
   "version": "0.0.1",
   "scripts": {
-    "ng": "ng",
+    "ng": "npx ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
