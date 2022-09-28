@@ -55,17 +55,18 @@
         formControlName="nometarefa">
       <br />
       
-      <div style="width: 50%; float:left">
+      <div style="width: 100%;">
         <label>Custo</label>
         <br />
-        <script src="js/jquery.price_format.1.8.min.js"></script>
-        <input type="text" currency-input ng-model id="custo" name="custo" class="fadeIn second" placeholder="Custo" formControlName="custo" (change)="formatNumber()" >
+        <input type="text" currency-input ng-model id="custo" name="custo" class="fadeIn second form-control" placeholder="Custo" (change)="formatNumber()"
+        formControlName="custo">
       </div>
-
-      <div style="width: 50%; float:right">
+      <br />
+      <div style="width: 100%;">
         <label>Data Limite</label>
         <br />
-        <input type="date" id="datalimite" name="datalimite" class="fadeIn second" formControlName="datalimite">
+        <input type="date" currency-input ng-model id="datalimite" name="datalimite" class="fadeIn second form-control" placeholder="Data Limite" (change)="formatNumber()"
+        formControlName="datalimite">
       </div>
       
       <div style="width: 90%; float:left">
