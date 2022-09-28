@@ -15,13 +15,13 @@ export class TarefaService {
   private ordembtUrl: string;
 
   constructor(private http: HttpClient) {
-    this.tarefasUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/';
-    this.tarefaUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/id=';
-    this.novaUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/nova/';
-    this.editarUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/editar';
-    this.apagarUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/apagar';
-    this.ordemUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/ordem';
-    this.ordembtUrl = 'http://lista-tarefas-spring.azurewebsites.net/tarefas/ordembt';
+    this.tarefasUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/';
+    this.tarefaUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/id=';
+    this.novaUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/nova/';
+    this.editarUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/editar';
+    this.apagarUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/apagar';
+    this.ordemUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/ordem';
+    this.ordembtUrl = 'https://lista-tarefas-spring.azurewebsites.net/tarefas/ordembt';
   }
 
   public selecionaTarefas(): Observable<Tarefas[]> {
